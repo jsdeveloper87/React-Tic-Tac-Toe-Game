@@ -1,0 +1,38 @@
+body {
+  text-align: center;
+  background-image: url("https://img.freepik.com/free-photo/old-wooden-texture-background-vintage_55716-1138.jpg?size=626&ext=jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-family: "Comic Sans MS";
+}
+
+.board {
+  display: inline-block;
+  font-size: 3em;
+}
+
+.field {
+  text-align: center;
+  width: 2em;
+  height: 2em;
+  line-height: 2;
+  float: left;
+}
+
+.field:nth-child(3n+1) {
+  clear: both;
+}
+
+.field:nth-child(5),
+.field:nth-child(6n+2) {
+  border-left: 3px solid white;
+  border-right: 3px solid white;
+}
+
+.field:nth-child(5),
+.field:nth-child(4),
+.field:nth-child(6) {
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+}
